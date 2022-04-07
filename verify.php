@@ -2,7 +2,7 @@
 	$email = $_POST['inputEmail'];
 	$pswd = $_POST['inputPasswd'];
 
-	$conn = mysqli_connect("localhost", "root", "", "www_project");
+	$conn = mysqli_connect("database-1.c5r5ecfgjs1g.us-east-1.rds.amazonaws.com", "admin", "adminpwd", "www_project", "3306");
 	if(!$conn){
 		echo "Cannot connecto to database " . mysqli_connect_error($conn);
 		exit;
